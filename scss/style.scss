@@ -1,0 +1,132 @@
+@import 'font.scss';
+@import 'nullstyle.scss';
+// animation-name:white-circle ;
+// animation-duration: 2s;
+// animation-timing-function:linear ;
+// animation-iteration-count:1;
+// animation-direction: alternate;
+// animation-delay: 0s;
+// animation-fill-mode:none;
+// background: url('../img/burger.png') 0 0/ 100% 100% no-repeat;
+
+:root {
+	--fm-First: 'Open Sans';
+	--fm-Second: 'Roboto';
+	--light-color: #ffff;
+	--black-color: #000000;
+	--first-color: #10d4b3;
+	--second-color: #22a18c;
+	--font-weight: 800;
+}
+
+body {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.header__container {
+	background: var(--first-color);
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.__container {
+	margin: 0 auto;
+	max-width: 900px;
+}
+.header__logo {
+	font-family: var(--font-fam-first);
+	font-weight: bolder;
+	color: var(--black-color);
+}
+.header__navigation {
+}
+.header__list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+}
+.header__item {
+	cursor: pointer;
+}
+
+.members {
+	
+	margin-top: 70px;
+}
+.member__container {
+	background: #bffff4;
+	padding: 15px;
+}
+
+.members__member {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 20px;
+}
+.member__img {
+	max-width: 50px;
+	max-height: 50px;
+	border-radius: 50%;
+	overflow: hidden;
+	img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+	}
+}
+.member__info {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	gap: 10px;
+	color: #000000;
+	font-family: var(--fm-First);
+	font-weight: 600;
+	font-size: 1.3em;
+}
+.member__name {
+}
+.member__message {
+}
+
+.panel {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+.panel__container {
+	padding: 20px;
+	background: var(--second-color);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.panel__navigation {
+	width: 100%;
+}
+.panel__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.panel__item {
+	cursor: pointer;
+	text-align: center;
+	color: #000000;
+	font-size: 1.2em;
+}
+
+.panel__title {
+	font-family: var(--fm-Second);
+}
